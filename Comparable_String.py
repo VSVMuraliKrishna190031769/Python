@@ -1,26 +1,3 @@
-Consider two arrays a,b consisting n number of strings. Your task is to compare two strings a[i], b[i], and determine whether they are comparable.
-Two strings are comparable if the subtraction of the number of similar characters doesn't exceed 3. All the strings contain characters of lower case only.
-Sample Input:
-a=[aaab,abba]
-b=[aabba,ddddab]
-output:
-['YES', 'NO']
-Explanation: 
-In a[0] and b[0] we get,
-3a -3a = 0a
-0<3
-1b-2b=1b
-1<3
-All are satisfied so yes 
-In a[1] and b[1]
-2a-1a=1a
-1<3
-0d-4d=4d
-4>3
-Not satisfies
-'NO'
-
-
 def output(l,m):
     k=len(l)
     answer=[]
